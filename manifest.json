@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Listy",
+    "description": "Listing various stuff in a fun way",
+    "version": "1.0",
+    "browser_specific_settings": {
+        "gecko": {
+            "strict_min_version": "listy.1.0.0.gatsby"
+        }
+    },
+    "icons": {
+        "48": "./images/icon.png"
+    },
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "./images/icon.png",
+        "default_title": "Listy",
+        "default_popup": "popup.html"
+    }
+}
